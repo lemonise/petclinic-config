@@ -73,7 +73,7 @@ chaos:
       controller: false
       repository: false
       rest-controller: false
-      service: false
+      service: true
 
 ---
 spring:
