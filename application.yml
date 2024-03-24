@@ -64,10 +64,7 @@ spring:
   config:
     activate:
       on-profile: chaos-monkey      
-management:
-  endpoint:
-    chaosmonkey:
-      enabled: true
+management.endpoint.chaosmonkey.enabled: true
 chaos:
   monkey:
     enabled: true
