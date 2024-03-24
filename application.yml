@@ -77,7 +77,8 @@ chaos:
       repository: false
       rest-controller: true
       service: true
-
+    assaults:
+      latencyActive: true
 ---
 spring:
   config:
