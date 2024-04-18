@@ -17,6 +17,12 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      registerHealthIndicator: true
+      minimumNumberOfCalls: 10
+
 ---
 spring:
   config:
