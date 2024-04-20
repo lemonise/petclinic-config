@@ -22,7 +22,10 @@ resilience4j.circuitbreaker:
     default:
       registerHealthIndicator: true
 
-cb.minCalls: 3
+cb:
+  minCalls: 10
+  waitInOpen: 10
+  windowSize: 100
 
 ---
 spring:
