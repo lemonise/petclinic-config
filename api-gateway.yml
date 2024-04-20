@@ -21,8 +21,8 @@ resilience4j.circuitbreaker:
   configs:
     default:
       registerHealthIndicator: true
-      minimumNumberOfCalls: 10
-      slowCallRateThreshold: 69
+
+cb.minCalls: 100
 
 ---
 spring:
