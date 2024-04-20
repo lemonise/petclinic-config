@@ -24,7 +24,7 @@ resilience4j.circuitbreaker:
 
 
 cb:
-  minCalls: 100
+  minCalls: 1000000
   waitInOpen: 20
   windowSize: 100
   CallsInHalfOpen: 10
