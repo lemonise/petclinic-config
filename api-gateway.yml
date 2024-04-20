@@ -22,7 +22,7 @@ resilience4j.circuitbreaker:
     default:
       registerHealthIndicator: true
 
-cb.minCalls: 100
+cb.minCalls: 3
 
 ---
 spring:
