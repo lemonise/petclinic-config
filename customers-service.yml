@@ -7,6 +7,19 @@ eureka:
     # enable to register multiple app instances with a random server port
     instance-id: ${spring.application.name}:${random.uuid}
 
+resilience4j.retry:
+  instances:
+    backendA:
+      maxAttempts: 5
+      waitDuration: 10s
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
+      retryExceptions:
+        - org.springframework.web.client.HttpServerErrorException
+        - java.io.IOException
+#      ignoreExceptions:
+#        - io.github.robwin.exception.BusinessException
+
 ---
 spring:
   config:
