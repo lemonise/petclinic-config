@@ -8,8 +8,8 @@ eureka:
     instance-id: ${spring.application.name}:${random.uuid}
 
 resilience4j.retry:
-  instances:
-    backendA:
+  configs:
+    default:
       maxAttempts: 5
       waitDuration: 10s
       enableExponentialBackoff: true
