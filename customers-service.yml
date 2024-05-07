@@ -24,13 +24,13 @@ eureka:
 resilience4j.retry:
   configs:
     default:
-      maxAttempts: 5
-      waitDuration: 10s
+      maxAttempts: 3
+      waitDuration: 500
       enableExponentialBackoff: true
       exponentialBackoffMultiplier: 2
-  instances:
-    updateOwner:
-      baseConfig: default
+#  instances:
+#    updateOwner:
+#      baseConfig: default
 #      retryExceptions:
 #        - org.springframework.web.client.HttpServerErrorException
 #        - java.io.IOException
