@@ -28,7 +28,7 @@ resilience4j.bulkhead:
       maxConcurrentCalls: 10
       maxWaitDuration: 10ms
 
-resilience4j.bulkhead.metrics.enabled: true
+#resilience4j.bulkhead.metrics.enabled: true
 
 cb:
   minCalls: 1000000
