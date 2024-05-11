@@ -26,12 +26,12 @@ cb:
   minCalls: 1000000
   waitInOpen: 20
   windowSize: 1000000
-  callsInHalfOpen: 3
+  callsInHalfOpen: 10
 
 resilience4j.bulkhead:
   configs:
     default:
-      maxConcurrentCalls: 3
+      maxConcurrentCalls: 10
       maxWaitDuration: 10ms
 
 #spring.task.execution.pool.max-size: 16
