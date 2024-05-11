@@ -22,19 +22,21 @@ resilience4j.circuitbreaker:
     default:
       registerHealthIndicator: true
 
+cb:
+  minCalls: 1000000
+  waitInOpen: 20
+  windowSize: 1000000
+  callsInHalfOpen: 10
+
 resilience4j.bulkhead:
   configs:
     default:
       maxConcurrentCalls: 10
       maxWaitDuration: 10ms
 
-#resilience4j.bulkhead.metrics.enabled: true
-
-cb:
-  minCalls: 1000000
-  waitInOpen: 20
-  windowSize: 1000000
-  callsInHalfOpen: 10
+spring.task.execution.pool.max-size: 16
+spring.task.execution.pool.queue-capacity: 100
+spring.task.execution.pool.keep-alive: 10s
 
 ---
 spring:
