@@ -35,7 +35,7 @@ resilience4j.bulkhead:
       maxWaitDuration: 10ms
 
 spring.task.execution.pool.max-size: 16
-spring.task.execution.pool.queue-capacity: 100
+spring.task.execution.pool.queue-capacity: 50
 spring.task.execution.pool.keep-alive: 10s
 
 ---
