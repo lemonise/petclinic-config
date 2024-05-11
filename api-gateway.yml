@@ -26,7 +26,7 @@ cb:
   minCalls: 1000000
   waitInOpen: 20
   windowSize: 1000000
-  callsInHalfOpen: 10
+  callsInHalfOpen: 3
 
 resilience4j.bulkhead:
   configs:
