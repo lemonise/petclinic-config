@@ -31,12 +31,12 @@ cb:
 resilience4j.bulkhead:
   configs:
     default:
-      maxConcurrentCalls: 3
+      maxConcurrentCalls: 10
       maxWaitDuration: 10ms
 
-spring.task.execution.pool.max-size: 16
-spring.task.execution.pool.queue-capacity: 50
-spring.task.execution.pool.keep-alive: 10s
+#spring.task.execution.pool.max-size: 16
+#spring.task.execution.pool.queue-capacity: 50
+#spring.task.execution.pool.keep-alive: 10s
 
 ---
 spring:
