@@ -74,6 +74,8 @@ chaos:
       repository: false
       rest-controller: false
       service: false
+    assaults:
+      killApplicationActive: true
 
 ---
 spring:
